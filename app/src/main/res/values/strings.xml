@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">IPC_Tracker</string>
+<!--  Nationality change IPC strings  -->
+    <string name="sovietIPCsIncome">Change Soviet Union Income</string>
+    <string name="germanyIPCsIncome">Change Germany Income</string>
+    <string name="englandIPCsIncome">Change United Kingdom Income</string>
+    <string name="japanIPCsIncome">Change Japan Income </string>
+    <string name="americanIPCsIncome">Change United States Income</string>
+<!--  Pick which power to play as  -->
+    <string name="prompt">Pick a Power To Play as</string>
+    <string name="soviet">Soviet Union</string>
+    <string name="germany">Germany</string>
+    <string name="england">United Kingdom</string>
+    <string name="japan">Japan</string>
+    <string name="america">United States</string>
+    <string name="noCountry">No country chosen</string>
+<!--  Ground Units price  -->
+    <string name="artilleryPrice">Artillery: 4 IPC\'s</string>
+    <string name="infantryPrice">Infantry: 3 IPC\'s</string>
+    <string name="tankPrice">Tank: 5 IPC\'s</string>
+    <string name="AAGunPrice">Anti Aircraft Gun: 6 IPC\'s</string>
+    <string name="industrialComplexPrice">Industrial Complex: 15 IPC\'s</string>
+<!--  Air units price strings  -->
+    <string name="fighterPrice">Industrial: 10 IPC\'s</string>
+    <string name="bomberPrice">Bomber: 12 IPC\'s</string>
+<!--  See units price strings  -->
+    <string name="transportPrice">Transport: 7 IPC\'s</string>
+    <string name="submarinePrice">Submarine: 6 IPC\'s</string>
+    <string name="destroyerPrice">Destroyer: 8 IPC\'s</string>
+    <string name="cruiserPrice">Cruiser: 12 IPC\'s</string>
+    <string name="aircraftCarrierPrice">Aircraft Carrier: 14 IPC\'s</string>
+    <string name="battleshipPrice">Battleship: 20 IPC\'s</string>
+    <string name="buyUnits">Buy Units</string>
+    <string name="collectIncome">End Turn</string>
+<!--  Miscellaneous  -->
+    <string name="back">Back</string>
+    <string name="purchasePrompt">Purchase Units</string>
+</resources>
