@@ -22,6 +22,10 @@ fun IPCAdjusterLayout(modifier:Modifier = Modifier){
     Column(horizontalAlignment = Alignment.CenterHorizontally){
         Text("Hello, World!!!")
 
+        AdjustIncome(onClick = {},
+            powerInsignia = R.drawable.ussr_insignia,
+            )
+
 
 
     }
