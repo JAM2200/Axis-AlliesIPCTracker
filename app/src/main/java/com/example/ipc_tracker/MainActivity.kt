@@ -96,6 +96,9 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        loadFile(gameFile)
+        deleteFile(gameFile)
+
         saveFile(gameFile,"Hello, World",newGame = true)
         loadFile(gameFile)
         setContent {
@@ -108,6 +111,11 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onStop(){
+        super.onStop()
+        saveFile(gameFile,"On Stop",false)
     }
 
     override fun onDestroy(){
@@ -149,6 +157,7 @@ class MainActivity : ComponentActivity() {
                 file.createNewFile()
             }
 
+
             file.appendText("Soviet IPC's: $globalUSSRIPCs Income: globalUSSRIncome\n")
             file.appendText("Germany IPC's: $globalGermanyIPCs Income: $globalGermanyIncome \n")
             file.appendText("England IPC's: $globalUKIPCs Income: $globalUKIncome\n")
@@ -158,6 +167,14 @@ class MainActivity : ComponentActivity() {
 
         } catch (e: IOException) {
             Log.d("[saveTextFileToStorage]", "Could not open file $fileName: $e")
+        }
+    }
+
+    private fun deleteSavedGame(fileName:String){
+        val file = File(applicationContext.filesDir,saveDirectory+"$fileName")
+        if(file.exists()){
+            Log.d("[deleteSavedGames]","Deleting file $saveDirectory/$fileName")
+            file.delete()
         }
     }
 }
