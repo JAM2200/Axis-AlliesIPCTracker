@@ -35,4 +35,5 @@
 <!--  Miscellaneous  -->
     <string name="back">Back</string>
     <string name="purchasePrompt">Purchase Units</string>
+    <string name="adjustIPCs">Adjust Income</string>
 </resources>
